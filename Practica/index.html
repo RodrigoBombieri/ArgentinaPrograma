@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 - ReactJs</title>
+    <meta name="description" content="clase 1 - ReactJs">
+    <meta name="keywords" content="ReactJs, desarrollo web">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <h1 class="titulo-centrado">Seguro No Pagamos Cooperativa</h1>
+        <p>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatem iusto eaque aliquid esse! Ipsum quo commodi laboriosam obcaecati illum adipisci quis? Maxime nisi eveniet, veritatis perspiciatis et itaque deserunt!</p>
+        <section>
+            <h2 class="titulo-centrado">Formulario de Contacto</h2>
+            <form id="formulario">
+                <label for="nombre"> Nombre:              
+                <input type="text" name="nombre" id="nombre" required>
+                </label> 
+                <br>   
+                <label for="apellido">Apellido:              
+                <input type="text" name="apellido" id="apellido" required>
+                </label>
+                <br>
+                <label for="dni">DNI:              
+                <input type="text" name="dni" id="dni" required>
+                </label>
+                <br>
+                <label for="email">Email:              
+                <input type="email" name="email" id="email" required>
+                </label>
+                <br>
+                <label for="telefono">Telefono:              
+                <input type="text" name="telefono" id="telefono" required>
+                </label>
+                <br>
+                <label type="text" for="tipoSeguro">Tipo de seguro:
+                    <select name="tipoSeguro" id="tipoSeguro" required>                  
+                        <option value = "1">Básico</option>
+                        <option value = "2">Intermedio</option>
+                        <option value = "3">Premium</option>
+                    </select>
+                </label>
+                <br>
+                <label for="precio">Precio:
+                    <input type="text" name="precio" id="precio" required>
+                </label>
+                <textarea name="consulta" id="textAreaConsulta" cols="30" rows="10" required></textarea>
+                <br>
+            <button id="btnEnviar">Enviar</button>
+            <button id="submit">Submit</button>
+            <button id="btnEjemplo">HOLA</button>
+            </form>
+            <br>
+            <p id="textoResultado"></p>
+            <br>
+            </section>
+        </main>
+        </body>
+<footer>
+    
+    <script src="js/funciones.js"></script>
+    <script src="js/dom.js"></script>
+</footer>
+</html>

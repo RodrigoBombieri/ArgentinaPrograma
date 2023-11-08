@@ -1,0 +1,86 @@
+/* Aclaración: los comentarios son debido a que aún continúo aprendiendo a usar CSS y me ayuda dejar apuntes */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;  /* Evita que el body tenga margen */
+    padding: 0; /* Evita que el body tenga padding */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+.calculadora {
+    max-width: 320px;   /* Ancho máximo de la calculadora */
+    margin: 0 auto;    /* Centra la calculadora en la página */
+    background-color: #fff;
+    border-radius: 10px;    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;  /* Margen superior */
+}
+
+.pantalla {
+    background-color: #f2f2f2;
+    padding: 20px;  /* Espacio interno de la pantalla */
+    text-align: center; /* Centra el texto de la pantalla */
+    font-size: 36px;
+    border-radius: 10px 10px 0 0;
+    width: 100%; /* Toma el ancho completo de la calculadora */
+    height: 100px; /* Altura fija para la pantalla */
+    border: none; 
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 50px;
+    background-color: #f2f2f2;
+    border: none;
+    text-align: right;
+    justify-content: flex-end;
+    padding: 0 20px;
+    box-sizing: border-box; /* Evita que el padding y el borde afecten el ancho total del elemento */
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column; /* Organiza las filas en una columna */
+    gap: 10px;
+    padding: 20px;
+    justify-content: center; /* Centra las filas en el contenedor */
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around; /* Distribuye uniformemente los botones en la fila */
+    align-items: center; /* Centra verticalmente los botones en la fila */
+    height: 70px;
+}
+
+input[type="button"] {
+    width: 70px; /* Ancho fijo para los botones */
+    height: 100%; /* Toma la altura completa de la fila */
+    font-size: 18px;
+    background-color: #f66a06;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+input[type="button"]:hover {
+    background-color: rgb(255, 222, 179);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}

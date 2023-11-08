@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="calculadora"/>
+    <meta name="keywords" content="calculadora, numeros, matematica"/>
+    <meta name="robots" content="index"/>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div class="calculadora">
+            <div class="pantalla">
+                <input type="text" id="pantalla" value="0" disabled>
+            </div>
+            <div class="teclado">
+                <div class="fila">
+                    <input type="button" value="7" onclick="agregarNumero(7)">
+                    <input type="button" value="8" onclick="agregarNumero(8)">
+                    <input type="button" value="9" onclick="agregarNumero(9)">
+                    <input type="button" value="+" onclick="operacion('+')">
+                </div>
+                <div class="fila">
+                    <input type="button" value="4" onclick="agregarNumero(4)">
+                    <input type="button" value="5" onclick="agregarNumero(5)">
+                    <input type="button" value="6" onclick="agregarNumero(6)">
+                    <input type="button" value="-" onclick="operacion('-')">
+                </div>
+                <div class="fila">
+                    <input type="button" value="1" onclick="agregarNumero(1)">
+                    <input type="button" value="2" onclick="agregarNumero(2)">
+                    <input type="button" value="3" onclick="agregarNumero(3)">
+                    <input type="button" value="*" onclick="operacion('*')">
+                </div>
+                <div class="fila">
+                    <input type="button" value="0" onclick="agregarNumero(0)">
+                    <input type="button" value="." onclick="agregarNumero('.')">
+                    <input type="button" value="=" onclick="operacion('=')">
+                    <input type="button" value="/" onclick="operacion('/')">
+                </div>
+                <div class="fila">
+                    <input type="button" value="C" onclick="limpiar()">
+                    <input type="button" value="X²" onclick="elevarAlCuadrado()">
+                    <input type="button" value="X³" onclick="elevarAlCubo()">
+                    <input type="button" value="φ" onclick="calcularFibonacci()">                   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <script src="js/funciones.js"></script>
+    </footer>
+</body>
+</html>
