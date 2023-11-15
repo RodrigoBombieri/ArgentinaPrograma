@@ -1,0 +1,51 @@
+
+
+.titulo{
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #999;
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+#subtitulo{
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #999;
+  margin-left: 10px; 
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+#subtitulo.subtituloN:hover{
+background-color: blueviolet;
+}
+
+#subtitulo.subtituloD:hover{
+background-color: rgb(43, 73, 226);
+}
+ 
+#subtitulo.subtituloP:hover{
+background-color: rgb(226, 43, 43);
+}
+
+#subtitulo.subtituloS:hover{
+background-color: rgb(226, 107, 43);
+}
+
+#subtitulo.subtituloCD:hover{
+background-color: rgb(43, 217, 226);
+} 
+
+.imagenDetalle {
+  max-width: 10%; 
+  height: auto; 
+  display: block;
+  margin-left: 10%;
+  border-radius: 5px; 
+}
