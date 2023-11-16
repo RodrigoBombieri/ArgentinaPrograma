@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function ItemDetail(props) {
+  const handleOption = () => { /// esta función se ejecuta cuando se hace click en el botón 
+    props.setCarritoCount((prevCount) => prevCount + 1); /// prevCount es el valor anterior del estado, en este caso es el valor de carritoCount
+  };
+  
   return (
     <div>
     <a href="URL_DE_TU_ENLACE">
@@ -11,6 +15,9 @@ export default function ItemDetail(props) {
       <h2 id='subtitulo' className='subtituloP'>Precio: {props.price} </h2>
       <h2 id='subtitulo' className='subtituloS'>Codigo: {props.sku} </h2>
       <h2 id='subtitulo' className='subtituloCD'>Cantidad Disponible: {props.cantDisp} </h2>
+      <a href="#" className="btn btn-primary" onClick={handleOption}>
+            Agregar al carrito 
+          </a>
     </div>
   )
 }
