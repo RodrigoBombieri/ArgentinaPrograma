@@ -1,4 +1,4 @@
-import React from 'react' /// esto no es necesario, pero es buena práctica
+import React from 'react'; /// esto no es necesario, pero es buena práctica
 
 /// ****************************************************************************************
 /// EJEMPLO DE COMPONENTE DE FUNCION
@@ -15,10 +15,15 @@ import React from 'react' /// esto no es necesario, pero es buena práctica
 /// son equivalentes pero normalmente se usa el de función
 //// ****************************************************************************************
 
-export default function Ejemplo(props) {
-  return (
+export default function Ejemplo(props) { /// props es un objeto que contiene los valores que le pasamos al componente desde el componente padre (App.jsx)
+  const handleOption = () => { /// esta función se ejecuta cuando se hace click en el botón 
+    props.setCarritoCount((prevCount) => prevCount + 1); /// prevCount es el valor anterior del estado, en este caso es el valor de carritoCount
+  };
+
+
+  return ( /// el return es lo que se va a renderizar en el componente, en este caso es un div con una card de bootstrap
     <div>
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card card-hover" style={{ width: "18rem" }}>
         <img src="https://5.imimg.com/data5/KA/QG/MY-69672094/gift-box-500x500.jpg" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title"> {props.title} </h5>
@@ -28,9 +33,9 @@ export default function Ejemplo(props) {
           <p>Precio: {props.price}</p>
           <p>Código: {props.sku}</p>
           <p>Cantidad Disponible: {props.cantDispo}</p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <a href="#" className="btn btn-primary" onClick={handleOption}>{/*Al hacer click en el boton, se activa la funcion onClick, que a su vez llama a la funcion handleOption */} 
+            Agregar al carrito 
+          </a> 
         </div>
       </div>
     </div>
