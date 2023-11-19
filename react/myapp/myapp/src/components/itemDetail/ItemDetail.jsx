@@ -6,7 +6,7 @@ export default function ItemDetail(props) {
   };
   
   return (
-    <div>
+    <div className="cardItem">
     <a href="URL_DE_TU_ENLACE">
         <img className='imagenDetalle'src="https://cdn.pixabay.com/photo/2016/09/20/11/27/phone-1682317_1280.png" alt="Descripción de la imagen" />
       </a>
